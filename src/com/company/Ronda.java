@@ -4,14 +4,17 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Ronda {
+    // Atributos
     private String numero;
     private Partido[] partidos;
 
+    // Constructor
     public Ronda(String numero, Partido[] partidos) {
         this.numero = numero;
         this.partidos = partidos;
     }
 
+    // Getters & Setters, Métodos
     public int puntos() {
         // Crear un mapa para llevar la cuenta de los puntos acumulados por cada equipo
         Map<Equipo, Integer> puntosPorEquipo = new HashMap<>();

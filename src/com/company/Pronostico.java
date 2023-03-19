@@ -1,45 +1,52 @@
 package com.company;
-
 import com.company.Equipo;
 import com.company.Partido;
 import com.company.ResultadoEnum;
 
 public class Pronostico {
-
-
     //Atributos:
-        private int numero;
-        private Partido partido;
-        private Equipo equipo;
-        private ResultadoEnum resultado;
+    private int numero;
+    private Partido partido;
+    private Equipo equipo;
+    private ResultadoEnum resultado;
 
 
-        // Constructor
-        public Pronostico(int numero, Partido partido, Equipo equipo, ResultadoEnum resultado) {
-            this.numero = numero;
-            this.partido = partido;
-            this.equipo = equipo;
-            this.resultado = resultado;
-        }
+    // Constructor
+    public Pronostico(int numero, Partido partido, Equipo equipo, ResultadoEnum resultado) {
+        this.numero = numero;
+        this.partido = partido;
+        this.equipo = equipo;
+        this.resultado = resultado;
+    }
 
-        //Getters
-
-
+    //Getters & Setters
     public Partido getPartido() {
             return partido;
         }
 
-        public Equipo getEquipo() {
+    public Equipo getEquipo() {
             return equipo;
         }
 
-        public ResultadoEnum getResultado() {
+    public ResultadoEnum getResultado() {
             return resultado;
         }
 
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
 
+    public void setPartido(Partido partido) {
+        this.partido = partido;
+    }
 
+    public void setEquipo(Equipo equipo) {
+        this.equipo = equipo;
+    }
 
-        }
+    public void setResultado(ResultadoEnum resultado) {
+        this.resultado = resultado;
+    }
+}
 
 

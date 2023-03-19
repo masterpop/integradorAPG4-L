@@ -1,13 +1,14 @@
 package com.company;
 
 public class Partido {
-
+    // Atributos
     private Equipo equipo1;
     private Equipo equipo2;
 
     private Integer golesEquipo1;
     private Integer golesEquipo2;
 
+    // Constructor
     public Partido(Equipo equipo1, Equipo equipo2, Integer golesEquipo1, Integer golesEquipo2) {
         this.equipo1 = equipo1;
         this.equipo2 = equipo2;
@@ -18,6 +19,7 @@ public class Partido {
     public Partido() {
     }
 
+    // Métodos
     public Equipo getEquipo1() {
         return equipo1;
     }
