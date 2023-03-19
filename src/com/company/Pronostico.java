@@ -1,3 +1,5 @@
+package com.company;
+
 import com.company.Equipo;
 import com.company.Partido;
 import com.company.ResultadoEnum;
