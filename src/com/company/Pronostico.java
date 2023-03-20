@@ -10,10 +10,9 @@ public class Pronostico {
     private Equipo equipo;
     private ResultadoEnum resultado;
 
-
     // Constructor
-    public Pronostico(int numero, Partido partido, Equipo equipo, ResultadoEnum resultado) {
-        this.numero = numero;
+    public Pronostico(Partido partido, Equipo equipo, ResultadoEnum resultado) {
+        //this.numero = numero;
         this.partido = partido;
         this.equipo = equipo;
         this.resultado = resultado;

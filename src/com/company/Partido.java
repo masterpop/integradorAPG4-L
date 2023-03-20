@@ -52,12 +52,9 @@ public class Partido {
         this.golesEquipo2 = golesEquipo2;
     }
 
-
     public ResultadoEnum resultado (Equipo pEquipo) {
-
         try {
             if (pEquipo.getNombre().equals(equipo1.getNombre())) {
-
                 if (golesEquipo1 > golesEquipo2) {
                     return ResultadoEnum.Ganador;
                 } else if (golesEquipo1 < golesEquipo2) {
@@ -67,7 +64,6 @@ public class Partido {
                 }
 
             } else if (pEquipo.getNombre().equals(equipo2.getNombre())) {
-
                 if (golesEquipo2 > golesEquipo1) {
                     return ResultadoEnum.Ganador;
                 } else if (golesEquipo2 < golesEquipo1) {
@@ -75,16 +71,11 @@ public class Partido {
                 } else {
                     return ResultadoEnum.Empate;
                 }
-
-
             }
-
 
         } catch (Exception e) {
             System.out.println(e.getMessage());
-
         }
-
 
         return null;
     }

@@ -1,20 +1,45 @@
 package com.company;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
 public class Ronda {
     // Atributos
     private String numero;
-    private Partido[] partidos;
+    private ArrayList<Partido> partidos;
 
     // Constructor
-    public Ronda(String numero, Partido[] partidos) {
+    public Ronda(String numero, ArrayList<Partido> partidos) {
         this.numero = numero;
         this.partidos = partidos;
     }
 
+    public Ronda(ArrayList<Partido> partidos) {
+        this.partidos = partidos;
+    }
+
     // Getters & Setters, Métodos
+    public String getNumero() {
+        return numero;
+    }
+
+    public void setNumero(String numero) {
+        this.numero = numero;
+    }
+
+    public ArrayList<Partido> getPartidos() {
+        return partidos;
+    }
+
+    public void setPartidos(ArrayList<Partido> partidos) {
+        this.partidos = partidos;
+    }
+
+    public void agregarPartido(Partido partido){
+        partidos.add(partido);
+    }
+
     public int puntos() {
         // Crear un mapa para llevar la cuenta de los puntos acumulados por cada equipo
         Map<Equipo, Integer> puntosPorEquipo = new HashMap<>();
